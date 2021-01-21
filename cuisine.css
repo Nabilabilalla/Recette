@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  display: flex;
+  background: #ffffff;
+ 
+  height: auto;
+}
+#navigation {
+  background-color: #fff7f7;   
+}
+ .header {
+ background-image: url('https://pixabay.com/fr/photos/cuisine-italienne-alimentaire-2378729/');
+} 
+/* #recherche {
+  background: white;
+} */
+.logo {
+  width: 7%;
+  margin-left: 80%;
+  margin-top: 2%;
+  border-radius: 50%;
+}
+
+/*bare de recherche*/
+.form {
+  position: relative;
+  height: 10%;
+  margin-left: 30%;
+  margin-top: -70px;
+
+}
+
+#search {
+  width: 50%;
+  height: 39%;
+  font-size: 20px;
+}
+#GO {
+width: 6%;
+margin-left: -7%;
+background-color: #2B9348;
+color: aliceblue;
+} 
+/*partie2*/
+.navigation {
+  display: inline-flex;
+  background: #2B9348;
+  width: 98%;
+  height:5%;
+}
+.recette {
+  display: inline-flex;
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 30%;
+  padding-top: 2%; 
+ 
+}
+ul > li {
+  padding-left: 3%;
+  font-size: 14px;
+}
+
+/* Menu Burger */
+
+#wrap {
+  display: flex;
+  font-family: sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: -6%;
+  
+  transition: transform .4s cubic-bezier(.25, .1, .25, 1);
+}
+
+#wrap:not(:target) {
+  transform: translate3d(-335px, 0, 0);
+}
+
+#wrap:target {
+  transform: translate3d(0, 0, 0);
+}
+
+#open,
+#close {
+  height: 44px;
+  text-align: right;
+  display: block;
+  margin-right: -30px;
+}
+
+#wrap:target #open,
+#wrap:not(:target) #close {
+  display: none;
+}
+
+#wrap:target #open {
+  display: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.header {
+  background: #2B9348;
+  width: 360px;
+  padding: 0 20px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.nav {
+  padding: 25px;
+}
+
+.main {
+  padding: 25px;
+  flex: 1;
+  display:inline-block;
+}
+
+p {
+  max-width: 590px;
+  color:#306;
+}
+#story {
+  display: inline-flex;
+  background: white;
+  padding-top: 2%;
+  padding-left: 9%;
+ 
+}
+
+.stor {
+  width: 9%;
+  height:80%;
+  margin-left: -5%;
+  border-radius: 50%;
+  border: solid #2B9348;
+}
+h3{
+  margin-top: 8%;
+  margin-left: 5%;
+  font-size: 10px;
+  text-align: right;
+}
+.h1{
+  background: white;
+  padding-left: 50%;
+  padding-top: 30px;
+}
+.AA{
+  width: 20%;
+  margin-left: 30%;
+  margin-top: 5%;
+  opacity: 0.4;
+}
+.livre{
+  width: 80%;
+
+  padding-left: 10%;
+}
+.vitamine{
+  margin-left: 20%;
+  margin-top: -44%;
+  line-height: 1.8em;
+}
+.vitamine2{
+  margin-left: 53%;
+  margin-top: -35%;
+  line-height: 1.8em;
+}
+.vite{
+  margin-left: 32%;
+  width: 18%;
+  margin-top: -30%;
+  opacity: 0.6;
+  border-radius: 20%;
+}
+.p{
+  color: #2B9348;
+}
+
+/* Partie commerce */
+ #trouve {
+ 
+  background: #2B9348;
+  width: 100%;
+  height:5%;
+ 
+  margin-top: 12%;
+}
+.trouver1 {
+
+  margin-left: 30%;
+}
+.trouver {
+  list-style-type: none;
+  font-weight: bold;
+  margin-left: 20%;
+  padding-top: 3%; 
+ 
+}
+ul > li {
+  padding-left: 3%;
+  font-size: 14px;
+  display: inline-flex;
+} 
+/*contact*/
+
+
+#contact {
+width: 500px;
+margin-left: 7%;
+margin-top: 2%;
+background:white;
+position: relative;
+}
+
+
+#contact h1 {
+background:  #2B9348;
+font-family: Oswald ,sans-serif;
+font-size: 1.75em;
+padding: 0.6em 0 0.6em 0.4em;
+color: white;
+text-shadow: 0 0.06em 0 #2B9348;
+position: relative;
+}
+
+
+.input_wrapper {
+position: relative;
+}
+
+.input_wrapper input[type="text"] {
+margin-top: 1em;
+display: block;
+width: 100%;
+background: white;
+border: 1px solid #DADADA;
+box-shadow: 0 0 1px 0 #E4E4E4;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+color: #5E5E5E;
+text-indent: 15%;
+}
+
+.input_wrapper label {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+background:  #2B9348;
+color: white;
+font-family: Oswald ,sans-serif;
+box-sizing: border-box;
+width: 15%;
+text-align: center;
+line-height: 2.8em;
+
+}
+
+.textarea_wrapper textarea {
+margin-top: 20px;
+display: block;
+width: 100%;
+  min-height:150px;
+background: white;
+border: 1px solid #DADADA;
+box-shadow: 0 0 1px 0 #E4E4E4;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+color: #5E5E5E;
+}
+
+.submit_wrapper {
+text-align: center;
+}
+.submit_wrapper input {
+text-align: center;
+display: inline-block;
+width: 40%;
+height: 50px;
+margin-top: 1em;
+margin-bottom: 6px;
+cursor: pointer;
+background:  #2B9348;
+color: white;
+font-family: Oswald ,sans-serif;
+font-size: 1em;
+border: none;
+-webkit-box-shadow: 1px 1px 0 0  #2B9348,2px 2px 0 0  #2B9348,3px 3px 0 0  #2B9348;
+box-shadow: 1px 1px 0 0  #2B9348,2px 2px 0 0  #2B9348,3px 3px 0 0  #2B9348;
+}
+
+
+/**********animation contact************/
+
+
+.container{
+  margin-left: 70%;
+  margin-top: 1%;
+  width: 70px;
+  height: 70px;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flame{
+  bottom:0;
+  position:absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-45deg) scale(1.5,1.5);
+}
+
+.yellow{
+  left:15px; 
+  width: 30px;
+  height: 30px;
+  background:gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange{
+  left:10px; 
+  width: 40px;
+  height: 40px;
+  background:orange;
+  box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red{
+  left:5px;
+  width: 50px;
+  height: 50px;
+  background:OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+
+.white{
+  left:15px; 
+  bottom:-4px;
+  width: 30px;
+  height: 30px;
+  background:white;
+  box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle{
+  border-radius: 50%;
+  position:absolute;  
+}
+
+.blue{
+  width: 10px;
+  height: 10px;
+  left:25px;
+  bottom:-25px; 
+  background: SlateBlue;
+  box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+
+
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}
+/*****casrolle*****/
+.casrol{
+
+  width: 15%;
+  margin-top: -2%;
+  margin-left: 68%;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+img .casrol{
+  margin-top: -9%;
+}
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}
+
+/**lég**/
+
+.tom{
+  width: 5%;
+  margin-top: -10%;
+  margin-left: 70%;
+  position: relative;
+
+
+}
+
+.toma{
+  width: 4%;
+  margin-top: -19%;
+  margin-left: 65%;
+  position: relative;
+
+
+}
+
+.tomn{
+  width: 7%;
+  margin-top: -12%;
+  margin-left: 59%;
+  position: relative;
+
+}
+
+.tamm{
+  width: 7%;
+  margin-top: -12%;
+  margin-left: 53%;
+  position: relative;
+
+}
+
+    
+  
+    .animation{
+      margin-top: -25%;
+    }
+    /**footer**/
+    footer {
+      margin-top: 8%;
+    }
+    
+    .footer-distributed {
+      background-color: #292c2f;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      font: bold 16px sans-serif;
+    }
+    
+    .footer-distributed h3 {
+      color: #ffffff;
+      font: normal 36px 'Cookie', cursive;
+    }
+    
+
+
+    /*TODO: clean it all up, finish flex, add aesthetics, icons, redefine to be relative to vh-vw, maybe rework v2 variant using scss and frames and real transitions? */
+
+.infocardContainer * {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+
+
+
+.infocardContainer {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: rgb(0,159,255);
+  background: linear-gradient(121deg, rgba(255,255,255,0) 13%, rgba(0,159,255,1) 100%);
+  transition: all 500ms ease-in;
+  transition-delay: 1s;
+  margin: auto;
+  margin-top: 100px;
+  --margin-top: 100px;
+}
+.infocardContainer:hover {
+  width: 500px;
+  border-radius: 100px 10px 100px 100px;
+  transition: all 1s ease-out;
+}
+
+
+.infocardContainer div * {
+  display: flex;
+  --flex: inherit;
+  overflow: hidden;
+  text-overflow: hidden;
+  --background-color: yellow;
+  color: white;
+  white-space: nowrap;
+  width: 0;
+  height: auto;
+  transition: all 450ms ease-in;
+  transition-delay: 1s;
+}
+.infocardContainer:hover div *{
+  --background-color: purple;
+  display: flex;
+  visibility: visible;
+  transition: all 1s ease-out;
+  transition-delay: 500ms;
+  width: 100%;
+  height: auto;
+}
+
+.infocardContainer #main, .infocardContainer #main img{
+  --background-color: red;
+  height: 200px;
+  width: 200px;
+  padding-right: 10px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.infocardContainer #main img{
+  height: 180px;
+  width: 180px;
+  transition: none;
+  display: float;
+  position: relative;
+  border: 10px solid white;
+  margin: 0 0 0 0; padding: 0 0 0 0;
+}
+.infocardContainer #textbois {
+  position: relative;
+}
+.infocardContainer #textbois #hotlinks {
+  max-width: 60%;
+  max-height: 30px;
+  
+  --background-color: white;
+  position:absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 13px;
+}
+.infocardContainer #textbois #hotlinks * {
+  background-color: white;
+  max-width: 30px;
+  --margin: 0 1px 0 1px;
+  border-radius: 25px;
+}
+/*TODO: animate copy main transition style for info*/
+.infocardContainer #textbois #hotlinks *:hover {
+  
+  
+}
+    
+  
+    
+   
+    
+    
+  
